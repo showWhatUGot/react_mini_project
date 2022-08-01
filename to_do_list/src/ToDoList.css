@@ -1,0 +1,34 @@
+#mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 40vh;
+}
+
+#inputDiv {
+  margin: 20px;
+}
+
+#inputTag {
+  margin-right: 10px;
+  border: none;
+
+  border-bottom: solid 2px black;
+  text-align: center;
+}
+
+#itemList {
+  margin: 10px;
+}
+
+#btNextItem {
+  margin-left: 10px;
+  border: none;
+  background: none;
+}
+
+ul {
+  margin-right: 15px;
+}
