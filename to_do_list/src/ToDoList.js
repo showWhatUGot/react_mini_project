@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ToDoList.css";
+import Clock from "./component/Clock.js";
 
 const ToDoList = () => {
   const [items, setItem] = useState([
@@ -46,8 +47,7 @@ const ToDoList = () => {
 
   return (
     <div className="mainDiv">
-      <div className="clock">시계</div>
-
+      <Clock />
       <div className="inputDiv">
         <input
           className="inputTag"

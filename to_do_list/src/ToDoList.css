@@ -11,6 +11,11 @@
    */
 }
 
+.clock {
+  color: white;
+  font-size: 25px;
+}
+
 .mainDiv {
   display: flex;
   flex-direction: column;
