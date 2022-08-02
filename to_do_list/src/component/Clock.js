@@ -4,8 +4,7 @@ const Clock = () => {
   const [time, setTime] = useState("");
 
   const currentTime = () => {
-    const date = new Date();
-    setTime(date.toLocaleTimeString());
+    setTime(new Date().toLocaleTimeString());
   };
 
   const intervalTime = () => {
