@@ -1,3 +1,16 @@
+#root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img/mountain.jpg);
+  /* 그레이 필터 적용했으나 맨 윗층에 필터가
+   적용되서 모든 색이 컴포넌트 색이 필터링 되어 취소함. 
+   이미지를 직접 편집하여 효과 적용함.
+   */
+}
+
 .mainDiv {
   display: flex;
   flex-direction: column;
@@ -14,9 +27,15 @@
 .inputTag {
   margin-right: 10px;
   border: none;
-
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px white;
   text-align: center;
+  background: none;
+  color: white;
+  padding: 5px;
+}
+
+::placeholder {
+  color: white;
 }
 
 input:focus {
@@ -25,12 +44,19 @@ input:focus {
 
 .itemList {
   margin: 10px;
+  color: white;
 }
 
-.btNextItem {
+.rmNextItem {
   margin-left: 10px;
   border: none;
   background: none;
+}
+
+.addBt {
+  background: none;
+  border: 2px solid white;
+  color: white;
 }
 
 ul {

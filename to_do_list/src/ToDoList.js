@@ -3,9 +3,9 @@ import "./ToDoList.css";
 
 const ToDoList = () => {
   const [items, setItem] = useState([
-    { id: 1, text: "아침에 사과 먹기" },
-    { id: 2, text: "운동하기" },
-    { id: 3, text: "리액트 공부하기" },
+    // { id: 1, text: "아침에 사과 먹기" },
+    // { id: 2, text: "운동하기" },
+    // { id: 3, text: "리액트 공부하기" },
   ]);
   const [inputTxt, setInput] = useState("");
   const [newId, setNewId] = useState(4);
@@ -38,7 +38,7 @@ const ToDoList = () => {
   const mkList = items.map((item) => (
     <li className="itemList" key={item.id}>
       {item.text}
-      <button className="btNextItem" onClick={() => onRemove(item.id)}>
+      <button className="rmNextItem" onClick={() => onRemove(item.id)}>
         ❌
       </button>
     </li>
@@ -46,6 +46,8 @@ const ToDoList = () => {
 
   return (
     <div className="mainDiv">
+      <div className="clock">시계</div>
+
       <div className="inputDiv">
         <input
           className="inputTag"
@@ -54,7 +56,9 @@ const ToDoList = () => {
           onKeyPress={onPress}
           placeholder="할 일을 입력하세요."
         />
-        <button onClick={onClick}>추가</button>
+        <button className="addBt" onClick={onClick}>
+          추가
+        </button>
       </div>
       <div>
         <ul>{mkList}</ul>
