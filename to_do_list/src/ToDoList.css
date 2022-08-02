@@ -1,4 +1,4 @@
-#mainDiv {
+.mainDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,11 +7,11 @@
   width: 40vh;
 }
 
-#inputDiv {
+.inputDiv {
   margin: 20px;
 }
 
-#inputTag {
+.inputTag {
   margin-right: 10px;
   border: none;
 
@@ -23,11 +23,11 @@ input:focus {
   outline: none;
 }
 
-#itemList {
+.itemList {
   margin: 10px;
 }
 
-#btNextItem {
+.btNextItem {
   margin-left: 10px;
   border: none;
   background: none;

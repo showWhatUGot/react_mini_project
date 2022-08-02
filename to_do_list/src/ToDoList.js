@@ -36,19 +36,19 @@ const ToDoList = () => {
   };
 
   const mkList = items.map((item) => (
-    <li id="itemList" key={item.id}>
+    <li className="itemList" key={item.id}>
       {item.text}
-      <button id="btNextItem" onClick={() => onRemove(item.id)}>
+      <button className="btNextItem" onClick={() => onRemove(item.id)}>
         ❌
       </button>
     </li>
   ));
 
   return (
-    <div id="mainDiv">
-      <div id="inputDiv">
+    <div className="mainDiv">
+      <div className="inputDiv">
         <input
-          id="inputTag"
+          className="inputTag"
           value={inputTxt}
           onChange={onChange}
           onKeyPress={onPress}
