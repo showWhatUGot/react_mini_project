@@ -1,6 +1,6 @@
 #root {
   height: 800px;
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +9,7 @@
    적용되서 모든 색이 컴포넌트 색이 필터링 되어 취소함. 
    이미지를 직접 편집하여 효과 적용함.
    */
+  flex-direction: column;
 }
 
 .clock {
